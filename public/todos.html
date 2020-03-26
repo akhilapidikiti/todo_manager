@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Todo-Management app</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+
+<body>
+  <article>
+    <h1 class="TodoPage-title">
+      My Todo-list
+    </h1>
+    <section class="AddTodo">
+      <input class="AddTodo-text" type="text" placeholder="What's next?">
+      <input class="AddTodo-date" type="date">
+      <input class="AddTodo-button" type="button" value="Add">
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-text">
+          Due Today
+        </h2>
+        <h2 class="TodoSectionTitle-remainingCount">
+          0/4
+        </h2>
+      </div>
+      <ul class="Todo-UnorderedList">
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Submit SaaS 201 Project</p>
+            <p class="TodoItem-overdue">overdue</p>
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">Call Accountant
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-text">
+          Due Tommorow
+        </h2>
+        <h2 class="TodoSectionTitle-remainingCount">0/3</h2>
+      </div>
+      <ul class="Todo-UnorderedList">
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">Refill Groceries
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-text">
+          Remaining
+        </h2>
+        <h2 class="TodoSectionTitle-remainingCount">0/3</h2>
+      </div>
+      <ul class="Todo-UnorderedList">
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Type something</p>
+            <p class="TodoItem-date">Jan 21</p>
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Type something</p>
+            <p class="TodoItem-date">Jan 22</p>
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+        <li class="TodoItem">
+          <div class="TodoItem-container">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Type Something</p>
+            <p class="TodoItem-date">Jan 23</p>
+            <img class="TodoItem-delete" src="trash.svg">
+          </div>
+        </li>
+      </ul>
+    </section>
+  </article>
+</body>
+
+</html>

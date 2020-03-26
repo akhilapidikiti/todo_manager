@@ -1,0 +1,114 @@
+body{
+  font-family: Open Sans,sans-serif;
+  max-width: 676px;
+  margin: 0 auto;
+  margin-top: 60px ;
+  justify-content: center;
+  display: flex;
+}
+
+.TodoPage-title{
+  font-size: 40px;
+  line-height: 1.6;
+  color: #453C52;
+  margin-bottom: 32px;
+}
+
+.AddTodo{
+  display: flex;
+  height: 38px;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.AddTodo-date{
+  padding: 6px 12px;
+  font-size: 22px;
+  color: #453c52;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.AddTodo-text{
+  padding: 6px 12px;
+  font-size: 22px;
+  color: #453c52;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.AddTodo-button{
+  font-size: 22px;
+  color: white;
+  background-color: #48BB78;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.TodoSection{
+  margin-bottom: 32px;
+}
+
+.TodoSectionTitle{
+  display: flex;
+}
+.TodoSectionTitle-text{
+  font-size: 30px;
+  line-height: 1.4;
+  color: #453C52;
+}
+.TodoSectionTitle-remainingCount{
+  font-size: 24px;
+  margin-left: 10px;
+  line-height: 1.4;
+  color: #726A7E;
+  padding :10px;
+}
+
+.TodoItem{
+  font-size: 26px;
+  color: #453C52;
+}
+.TodoItem-container{
+  display: inline-flex;
+  align-items: stretch;
+  margin-bottom: 36px;
+  margin-left: 32px;
+}
+.TodoItem-checkbox{
+  margin-right: 20px;
+  transform: scale(2.5);
+}
+
+.TodoItem-overdue{
+  margin-left: 30px;
+  color: #C53030;
+}
+
+.TodoItem-date{
+  margin-left: 15px;
+  color: #726A7E;
+}
+
+.TodoItem-delete{
+  visibility: hidden;
+  margin-left: 20px;
+}
+
+.TodoItem-delete > img{
+  width: 16px;
+}
+.TodoItem-container:hover{
+  background-color: #F1EDF7;
+}
+.TodoItem-container:hover .TodoItem-delete{
+  visibility: visible;
+}
+
+.Todo-UnorderedList{
+  margin-top: 32px;
+  list-style-type: none;
+
+}
