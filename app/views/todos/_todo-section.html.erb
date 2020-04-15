@@ -11,10 +11,10 @@
       <% todos.all.each do |todo| %>
         <li class="TodoItem">
           <div class="TodoItem-container">
-          <% checked = (todo.completed)? "checked": ""%>
+            <% checked = (todo.completed)? "checked": ""%>
             <input class="TodoItem-checkbox" type="checkbox" <%= checked %> >
-             <% classname = (todo.completed)? "TodoItem-textCompleted" : "TodoItem-text" %>
-              <p class = <%=classname%> checked><%=todo.todo_text%></p>
+            <% classname = (todo.completed)? "TodoItem-textCompleted" : "TodoItem-text" %>
+            <p class = <%=classname%> checked><%=todo.todo_text%></p>
             <% if show_due_date %>
               <p class="TodoItem-duedate"><%= todo.due_date.to_s(:short) %></p>
             <% end %>
