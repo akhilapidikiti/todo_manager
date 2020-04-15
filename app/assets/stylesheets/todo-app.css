@@ -99,6 +99,12 @@ body{
   color: #726A7E;
 }
 
+.TodoItem-textCompleted{
+  text-decoration: line-through;
+  color: #453C52;
+  letter-spacing: 0.1px;
+}
+
 .TodoItem-delete{
   visibility: hidden;
   margin-left: 20px;
