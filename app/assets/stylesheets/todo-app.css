@@ -54,6 +54,12 @@ body{
   margin-bottom: 32px;
 }
 
+.Add-Todo{
+  display: flex;
+  height: 32px;
+  align-items:stretch;
+  margin-bottom: 24px;
+}
 .TodoSectionTitle{
   display: flex;
   align-items: center;
