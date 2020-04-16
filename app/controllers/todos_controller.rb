@@ -10,8 +10,8 @@ class TodosController < ApplicationController
   def show
     id = params[:id]
     todo = Todo.find(id)
-    render "todo"
-    #render plain: todo.to_pleasant_string
+    #render "todo"
+    render plain: todo.to_pleasant_string
   end
 
   def create
@@ -31,15 +31,6 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save
-    render plain: "Updated todo completed status to #{completed}"
-  end
-
-  def update
-    id = params[:id]
-    due_date = params[:due_date]
-    todo = Todo.find(id)
-    todo.due_date = due_date
-    todo.save
-    render plain: "updated todo due_date to #{due_date}"
+    redirect_to todos_path
   end
 end
