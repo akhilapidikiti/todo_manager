@@ -44,6 +44,10 @@ class Todo < ActiveRecord::Base
     all.where(completed: true)
   end
 
+  def self.overdue
+    all.where("due_date < ? and completed = ?", Date.today, false)
+  end
+
   def self.mark_as_complete!(todo_id)
     todo = Todo.find(todo_id)
     todo.completed = true

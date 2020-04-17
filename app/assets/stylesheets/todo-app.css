@@ -91,7 +91,7 @@ body{
 }
 .TodoItem-checkbox{
   margin-right: 20px;
-  transform: scale(2.5);
+  transform: scale(1.5);
 }
 
 .TodoItem-duedate{
