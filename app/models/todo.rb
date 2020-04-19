@@ -22,6 +22,9 @@ class Todo < ActiveRecord::Base
     "#{id}. #{due_date.to_s()} #{todo_text} #{is_completed}"
   end
 
+  def self.of_user(user)
+    all.where(user_id: user.id)
+  end
   def self.show_list
     puts "My Todo-list\n\n"
 
