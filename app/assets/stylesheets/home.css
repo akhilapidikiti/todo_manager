@@ -19,5 +19,13 @@ margin-bottom: 30px;
 .flash-msg{
   color: darkred;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.flash-notice{
+  color: darkgreen;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: 25px;
 }
