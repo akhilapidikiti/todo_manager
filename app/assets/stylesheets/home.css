@@ -15,3 +15,9 @@ margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
+
+.flash-msg{
+  color: darkred;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
